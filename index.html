@@ -2,6 +2,8 @@
 <html class="no-js" lang="">
 
 <head>
+
+
   <meta charset="utf-8">
   <title>LMCapital.fr</title>
   <meta name="description" content="LM Capital website">
@@ -18,22 +20,35 @@
   
   <style>
 
-  body{
+    html{
+		height: 100%;
+	}
+  
+    body{
 		background: #fcfcfc;
 		color: #009fff;
 		text-align: center;
-		font-family: 'Noto Sans Kannada', sans-serif;
-		background-image: "lmcapital_web.jpg";
-		background-position: center;
+		font-family: sans-serif;
+		background-image: url("./lmcapital_web.jpg");
+		background-position: inherit;
+		background-size: inherit;
+		background-repeat: no-repeat;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#table{
+		display: table;
+		width: 100%;
+		height: 100%;
 	}
 	
 	#lmcapital{
-		display: inline-table;
-		height: 200px;
+		display: table-cell;
 		vertical-align: middle;
 	}
   </style>
-  
 </head>
 
 <body>
@@ -42,7 +57,9 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p id="lmcapital">LMCapital.fr</p>
+<div id="table">
+  <p id="lmcapital"><img id="logo" src="./logo_lmcapital.png"></p>
+</div>
 </body>
 
 </html>
